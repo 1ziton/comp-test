@@ -1,7 +1,9 @@
+<p>双向task:{{targetTask.name}}</p>
 <div *ngFor="let task of taskList; let i = index;">
   <p>第{{i}}个</p>
   <p>
     <span>{{task.id}}</span>
     <span>{{task.name}}</span>
   </p>
+  <button (click)="_signClick(task)">签收</button>
 </div>

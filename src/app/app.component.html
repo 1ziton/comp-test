@@ -8,5 +8,6 @@
 <h2>Here are some links to help you start: </h2>
 
 <div>
-  <task-item [taskList]="taskData"></task-item>
+  <button (click)="changeData()">父组件button</button>
+  <task-item [taskList]="taskData" (signClick)="signClickHandler($event)" [(targetTask)]="task"></task-item>
 </div>
